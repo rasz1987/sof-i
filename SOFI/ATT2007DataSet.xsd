@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ATT2007DataSet" targetNamespace="http://tempuri.org/ATT2007DataSet.xsd" xmlns:mstns="http://tempuri.org/ATT2007DataSet.xsd" xmlns="http://tempuri.org/ATT2007DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="ATT2007ConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ATT2007ConnectionString1 (Web.config)" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.ATT2007ConnectionString1.ConnectionString" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="REPORTE PARA CIDESATableAdapter" GeneratorDataComponentClassName="REPORTE_PARA_CIDESATableAdapter" Name="REPORTE PARA CIDESA" UserDataComponentName="REPORTE PARA CIDESATableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ATT2007ConnectionString1 (Web.config)" DbObjectName="REPORTE PARA CIDESA" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT codemp, codcon, cantidad, monto, acumulado FROM [REPORTE PARA CIDESA]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="codemp" DataSetColumn="codemp" />
+              <Mapping SourceColumn="codcon" DataSetColumn="codcon" />
+              <Mapping SourceColumn="cantidad" DataSetColumn="cantidad" />
+              <Mapping SourceColumn="monto" DataSetColumn="monto" />
+              <Mapping SourceColumn="acumulado" DataSetColumn="acumulado" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ATT2007DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="ATT2007DataSet" msprop:Generator_UserDSName="ATT2007DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="REPORTE_x0020_PARA_x0020_CIDESA" msprop:Generator_TableClassName="REPORTE_PARA_CIDESADataTable" msprop:Generator_TableVarName="tableREPORTE_PARA_CIDESA" msprop:Generator_TablePropName="REPORTE_PARA_CIDESA" msprop:Generator_RowDeletingName="REPORTE_PARA_CIDESARowDeleting" msprop:Generator_RowChangingName="REPORTE_PARA_CIDESARowChanging" msprop:Generator_RowEvHandlerName="REPORTE_PARA_CIDESARowChangeEventHandler" msprop:Generator_RowDeletedName="REPORTE_PARA_CIDESARowDeleted" msprop:Generator_UserTableName="REPORTE PARA CIDESA" msprop:Generator_RowChangedName="REPORTE_PARA_CIDESARowChanged" msprop:Generator_RowEvArgName="REPORTE_PARA_CIDESARowChangeEvent" msprop:Generator_RowClassName="REPORTE_PARA_CIDESARow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="codemp" msprop:Generator_ColumnVarNameInTable="columncodemp" msprop:Generator_ColumnPropNameInRow="codemp" msprop:Generator_ColumnPropNameInTable="codempColumn" msprop:Generator_UserColumnName="codemp" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="codcon" msprop:Generator_ColumnVarNameInTable="columncodcon" msprop:Generator_ColumnPropNameInRow="codcon" msprop:Generator_ColumnPropNameInTable="codconColumn" msprop:Generator_UserColumnName="codcon" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="cantidad" msprop:Generator_ColumnVarNameInTable="columncantidad" msprop:Generator_ColumnPropNameInRow="cantidad" msprop:Generator_ColumnPropNameInTable="cantidadColumn" msprop:Generator_UserColumnName="cantidad" type="xs:int" minOccurs="0" />
+              <xs:element name="monto" msprop:Generator_ColumnVarNameInTable="columnmonto" msprop:Generator_ColumnPropNameInRow="monto" msprop:Generator_ColumnPropNameInTable="montoColumn" msprop:Generator_UserColumnName="monto" type="xs:int" minOccurs="0" />
+              <xs:element name="acumulado" msprop:Generator_ColumnVarNameInTable="columnacumulado" msprop:Generator_ColumnPropNameInRow="acumulado" msprop:Generator_ColumnPropNameInTable="acumuladoColumn" msprop:Generator_UserColumnName="acumulado" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
