@@ -47,29 +47,29 @@ namespace SOFI
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-                con = new OleDbConnection(cs);
-                string q = "INSERT INTO ESTATUS (ci, id_falta, fec_ini, fec_hasta, desc_reposo) values(@ci, @id_falta, @fec_ini, @fec_hasta, @desc)";
-                OleDbCommand comando = new OleDbCommand(q, con);
-                con.Open();
+            con = new OleDbConnection(cs);
+            string q = "INSERT INTO ESTATUS (ci, id_falta, fec_ini, fec_hasta, desc_reposo) values(@ci, @id_falta, @fec_ini, @fec_hasta, @desc)";
+            OleDbCommand comando = new OleDbCommand(q, con);
+            con.Open();
 
-                foreach (ListItem li in CheckBoxList1.Items)
+            foreach (ListItem li in CheckBoxList1.Items)
+            {
+                if (li.Selected)
                 {
-                    if (li.Selected)
-                    {
-                        comando.Parameters.Clear();
-                        comando.Parameters.AddWithValue("@ci", Convert.ToString(li.Value));
-                        comando.Parameters.AddWithValue("@id_falta", Convert.ToString(DropDownList1.SelectedValue));
-                        comando.Parameters.AddWithValue("@fec_ini", Convert.ToString(TextBox2.Text));
-                        comando.Parameters.AddWithValue("@fec_hasta", Convert.ToString(TextBox3.Text));
-                        comando.Parameters.AddWithValue("@desc", Convert.ToString(tb1.Text));
-                        comando.ExecuteNonQuery();
-                        Response.Write("<script>alert('Sus datos se han guardado satisfactoriamente');window.location.href='asign_estatus.aspx';</script>");
-                    }
-                 }
-                con.Close();
-                    
-                
-       
+                    comando.Parameters.Clear();
+                    comando.Parameters.AddWithValue("@ci", Convert.ToString(li.Value));
+                    comando.Parameters.AddWithValue("@id_falta", Convert.ToString(DropDownList1.SelectedValue));
+                    comando.Parameters.AddWithValue("@fec_ini", Convert.ToString(TextBox2.Text));
+                    comando.Parameters.AddWithValue("@fec_hasta", Convert.ToString(TextBox3.Text));
+                    comando.Parameters.AddWithValue("@desc", Convert.ToString(tb1.Text));
+                    comando.ExecuteNonQuery();
+                    Response.Write("<script>alert('Sus datos se han guardado satisfactoriamente');window.location.href='asign_estatus.aspx';</script>");
+                }
+            }
+            con.Close();
+
+
+
 
         }
     }

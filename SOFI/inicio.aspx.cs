@@ -10,7 +10,7 @@ using System.Configuration;
 
 namespace SOFI
 {
-    public partial class inicio : System.Web.UI.Page
+    public partial class WebForm1 : System.Web.UI.Page
     {
         // CONEXIÓN A LA BASE DE DATOS MEDIANTE EL CONNECTIONSTRING DEL WEB.CONFIG.
         string cs = ConfigurationManager.ConnectionStrings["ATT2007ConnectionString"].ConnectionString;
@@ -70,6 +70,21 @@ namespace SOFI
             con.Close();
         }
 
-        
+        /*protected void LinkButton1_Click(object sender, EventArgs e)
+        {
+            // Limpiamos la salida
+            Response.Clear();
+            // Con esto le decimos al browser que la salida sera descargable
+            Response.ContentType = "application/octet-stream";
+            // esta linea es opcional, en donde podemos cambiar el nombre del fichero a descargar (para que sea diferente al original)
+            Response.AddHeader("Content-Disposition", "attachment; filename=images/MANUAL DE USUARIO SOFI.PDF");
+            // Escribimos el fichero a enviar 
+            Response.WriteFile("images/MANUAL DE USUARIO SOFI.PDF");
+            // volcamos el stream 
+            Response.Flush();
+            // Enviamos todo el encabezado ahora
+            Response.End();
+        }*/
+
     }
 }

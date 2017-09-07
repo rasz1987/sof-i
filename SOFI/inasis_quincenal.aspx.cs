@@ -23,7 +23,7 @@ namespace SOFI
         OleDbDataAdapter adapt;
         DataTable dt;
         string fec = DateTime.Today.ToString("dd/MM/yyyy");
-        
+
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -53,7 +53,7 @@ namespace SOFI
         protected void Button1_Click(object sender, EventArgs e)
         {
             showdata();
-            
+
         }
 
         protected void gv_data_SelectedIndexChanged(object sender, EventArgs e)
@@ -86,7 +86,7 @@ namespace SOFI
             pageToRender.RenderControl(htw);
             response.Write(sw.ToString());
             response.End();
- 
+
         }
     }
 }

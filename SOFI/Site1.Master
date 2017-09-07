@@ -1,0 +1,49 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="SOFI.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" type="text/css" href="estilos.css" />
+    <title>UCOCAR | Inasistencia con Nombres </title>
+</head>
+    <header >
+        <div class="logotipo">
+            <img src="images/SOFI.jpg" width="1000px"  alt="" />
+        </div>
+        <nav>
+            <ul>
+                <li id="page1" runat="server"><a href="inicio.aspx">Inicio</a></li>
+                <li id="page2" runat="server"><a href="busq_esp.aspx">Búsqueda rápida</a></li>
+                <li id="page3" runat="server"><a href="inasis_diaria.aspx">Actualización Inasis.</a></li>
+                <li id="page4" runat="server"><a href="inasis_quincenal.aspx">TXT SIGA</a></li>
+                <li id="page5" runat="server"><a href="asign_estatus.aspx">Estatus de Empleado</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="main">
+        <!--section class="articles">
+            <article>
+                
+            </article>
+        </!--section-->
+       
+    </section>
+<body>
+    <form id="form1" runat="server">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            
+        </asp:ContentPlaceHolder>
+    
+    <footer >
+        <p>Desarrollado por la Oficina de Sistemas y Tecnologías de la Información</p>
+        <p>Se recomienda el uso del Explorador Chrome o Firefox</p>
+        <p>
+            <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Manual de Usuario</asp:LinkButton>
+        </p>
+    </footer>
+    </form>
+</body>
+    
+</html>

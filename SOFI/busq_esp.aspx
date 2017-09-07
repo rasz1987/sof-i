@@ -1,43 +1,6 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="busq_esp.aspx.cs" Inherits="SOFI.busq_esp" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="busq_esp.aspx.cs" Inherits="SOFI.busq_esp" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-     <link rel="stylesheet" type="text/css" href="estilos.css" />
-    <title>UCOCAR | Búsqueda Específica </title>
-    
-</head>
-  
-    <header >
-        <div class="logotipo">
-            <img src="images/SOFI.jpg" width="1000px"  alt="" />
-        </div>
-        <nav>
-            <ul>
-                <li><a href="inasis_quincenal.aspx">Inasistencias Quincenal para Cidesa</a></li>
-                <li><a href="inicio.aspx">Inasis. con Nombres</a></li>
-                <li><a href="inasis_diaria.aspx">Actualización de Inasistencia</a></li>
-                <li><a class="active" href="busq_esp.aspx">Búsqueda Específica</a></li>
-                <li><a href="asign_estatus.aspx">Asignar Estado de Empleado</a></li>
-                
-            </ul>
-        </nav>
-    </header>
-    <!--section class="main">
-        <section class="articles">
-            <article>
-                
-            </article>
-        </section>
-        <aside>
-            
-        </aside>
-    </section-->
-    
-<body>
-    <form id="form1" runat="server">
     <div class="panel">
             
         <asp:RadioButton ID="rb1" runat="server" AutoPostBack="True"  Text="Cédula" GroupName="busqueda" OnCheckedChanged="rb1_CheckedChanged" />
@@ -79,10 +42,5 @@
     
     
     </div>
-    </form>
-    <footer>
-        <p>Desarrollado por la Oficina de Sistemas y Tecnologías de la Información</p>
-        <p>Se recomienda el uso del Explorador Chrome o Firefox</p>
-    </footer>
-</body>
-</html>
+
+</asp:Content>
