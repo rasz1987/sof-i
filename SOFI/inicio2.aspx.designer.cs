@@ -10,7 +10,7 @@
 namespace SOFI {
     
     
-    public partial class inicio {
+    public partial class WebForm1 {
         
         /// <summary>
         /// Control Panel1.

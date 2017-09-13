@@ -1,0 +1,241 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="inicio.master.cs" Inherits="landing_page_app.inicio" %>
+
+<!DOCTYPE html>
+
+<!--
+Template Name: Imperaran
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+-->
+<html>
+<head>
+<title>CAT_APPS</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body id="top">
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- Top Background Image Wrapper -->
+<div class="bgded overlay" style="background-image:url('images/demo/backgrounds/01.jpg');"> 
+  <!-- ################################################################################################ -->
+  <header id="header" class="hoc clear">
+    <div id="logo"> 
+      <!-- ################################################################################################ -->
+      <h1>sof-i_2.0</h1>
+      <p>SOftware para el control de asistencia del personal</p>
+      <!-- ################################################################################################ -->
+    </div>
+    <div id="topbar" class="clear"> 
+      <!-- ################################################################################################ -->
+      <nav id="mainav" class="fl_left">
+        <ul class="clear">
+          <li class="active"><a href="index.aspx">Home</a></li>
+          <li><a class="drop" href="#">Pages</a>
+            <ul>
+              <li><a href="pages/gallery.html">Gallery</a></li>
+              <li><a href="pages/full-width.html">Full Width</a></li>
+              <li><a href="pages/sidebar-left.html">Sidebar Left</a></li>
+              <li><a href="pages/sidebar-right.html">Sidebar Right</a></li>
+              <li><a href="pages/basic-grid.html">Basic Grid</a></li>
+            </ul>
+          </li>
+          <li><a class="drop" href="#">Dropdown</a>
+            <ul>
+              <li><a href="#">Level 2</a></li>
+              <li><a class="drop" href="#">Level 2 + Drop</a>
+                <ul>
+                  <li><a href="#">Level 3</a></li>
+                  <li><a href="#">Level 3</a></li>
+                  <li><a href="#">Level 3</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Level 2</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Link Text</a></li>
+          <li><a href="#">Link Text</a></li-->
+        </ul>
+      </nav>
+      <!--div class="fl_right">
+        <ul class="nospace inline pushright">
+          <li><a href="#" title="Login"><i class="fa fa-sign-in"></i></a></li>
+          <li><a href="#" title="Register"><i class="fa fa-user-plus"></i></a></li>
+          <li><a href="#" title="Newsletter"><i class="fa fa-newspaper-o"></i></a></li>
+        </ul>
+      </div-->
+      <!-- ################################################################################################ -->
+    </div>
+  </header>
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <div id="pageintro" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <article class="introtxt">
+      <p>Nueva versión</p>
+      <h2 class="heading">SOF-I_2.0</h2>
+      <p>Innovando</p>
+      <footer><a class="btn medium inverse" href="#">Nibh laoreet</a></footer>
+    </article>
+    <!-- ################################################################################################ -->
+  </div>
+  <!-- ################################################################################################ -->
+</div>
+<!-- End Top Background Image Wrapper -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper">
+  <!--div class="split clear light" style="background-image:url('images/demo/backgrounds/02.png');">
+    <article class="box center"> 
+      <!-- ################################################################################################ >
+      <div class="btmspace-30">
+        <p class="nospace"><a href="#">Tortor sit amet aliquet</a></p>
+        <h2 class="heading font-x2">Urna erat sit amet lacus</h2>
+        <p>Varius lectus id tempus venenatis massa tellus vehicula turpis eget.</p>
+      </div>
+      <footer><a class="btn medium inverse" href="#">Sit amet turpis</a></footer>
+      <!-- ################################################################################################ >
+    </article>
+  </div-->
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row3">
+  <main class="hoc container clear"> 
+    <!-- main body -->
+    <!-- ################################################################################################ -->
+    <div class="center btmspace-50">
+      <h3 class="font-x2 nospace">Calatalogo de Aplicaciones</h3>
+      <p class="nospace">ffdfdfdfdfdfdfdfdfdfdf.</p>
+    </div>
+    <ul class="nospace group services">
+      <li class="one_third first">
+        <article><a href="#"><img src="images/demo/320x180.png" alt=""></a>
+          <div>
+            <h6 class="heading">Feugiat ut eu metus</h6>
+            <p>Dolor sit amet consectetur adipiscing elit eget enim ut ante sagittis.</p>
+            <footer><a class="btn small" href="#">Faucibus</a></footer>
+          </div>
+        </article>
+      </li>
+      <li class="one_third">
+        <article><a href="#"><img src="images/demo/320x180.png" alt=""></a>
+          <div>
+            <h6 class="heading">Donec nec pretium</h6>
+            <p>Praesent ut luctus nulla quis dignissim sem ut vitae nisl augue.</p>
+            <footer><a class="btn small" href="#">Malesuada</a></footer>
+          </div>
+        </article>
+      </li>
+      <li class="one_third">
+        <article><a href="#"><img src="images/demo/320x180.png" alt=""></a>
+          <div>
+            <h6 class="heading">Elit at condimentum</h6>
+            <p>Congue enim metus ligula id accumsan dui nunc et risus praesent.</p>
+            <footer><a class="btn small" href="#">Volutpat</a></footer>
+          </div>
+        </article>
+      </li>
+      <li class="one_third first">
+        <article><a href="#"><img src="images/demo/320x180.png" alt=""></a>
+          <div>
+            <h6 class="heading">Feugiat ut eu metus</h6>
+            <p>Dolor sit amet consectetur adipiscing elit eget enim ut ante sagittis.</p>
+            <footer><a class="btn small" href="#">Faucibus</a></footer>
+          </div>
+        </article>
+      </li>
+      <li class="one_third">
+        <article><a href="#"><img src="images/demo/320x180.png" alt=""></a>
+          <div>
+            <h6 class="heading">Donec nec pretium</h6>
+            <p>Praesent ut luctus nulla quis dignissim sem ut vitae nisl augue.</p>
+            <footer><a class="btn small" href="#">Malesuada</a></footer>
+          </div>
+        </article>
+      </li>
+      <li class="one_third">
+        <article><a href="#"><img src="images/demo/320x180.png" alt=""></a>
+          <div>
+            <h6 class="heading">Donec nec pretium</h6>
+            <p>Praesent ut luctus nulla quis dignissim sem ut vitae nisl augue.</p>
+            <footer><a class="btn small" href="#">Malesuada</a></footer>
+          </div>
+        </article>
+      </li>
+    </ul>
+    <!-- ################################################################################################ -->
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper bgded overlay" style="background-image:url('images/demo/backgrounds/03.png');">
+  <div class="hoc container clear"> 
+    <!-- ################################################################################################ -->
+    <ul class="nospace group center btmspace-50">
+      <li class="one_third first">
+        <article class="block inspace-30 borderedbox bg_white"><a href="#"><i class="btmspace-15 fa fa-4x fa-language"></i></a>
+          <h6 class="font-x1">Blandit quam laoreet</h6>
+          <p class="nospace">Sapien nullam pulvinar nulla vel rutrum imperdiet nunc ante.</p>
+        </article>
+      </li>
+      <li class="one_third">
+        <article class="block inspace-30 borderedbox bg_white"><a href="#"><i class="btmspace-15 fa fa-4x fa-anchor"></i></a>
+          <h6 class="font-x1">In vehicula lorem nisi</h6>
+          <p class="nospace">Aliquet diam aenean malesuada massa massa sed lobortis risus.</p>
+        </article>
+      </li>
+      <li class="one_third">
+        <article class="block inspace-30 borderedbox bg_white"><a href="#"><i class="btmspace-15 fa fa-4x fa-book"></i></a>
+          <h6 class="font-x1">Cras sed purus nulla</h6>
+          <p class="nospace">Duis dui turpis egestas id odio et faucibus egestas enim fusce.</p>
+        </article>
+      </li>
+    </ul>
+    <div class="center">
+      <h3 class="font-x2">Eleifend augue proin ut odio consectetur rutrum sapien</h3>
+      <p class="nospace"><a class="btn small" href="#">Cursus quam eget</a></p>
+    </div>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row4">
+  
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row5">
+  <div id="copyright" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <p class="fl_left">Copyleft &copy; 2017 - <a href="#">Oficina de Tecnologías de Información</a></p>
+    <p class="fl_right"><a target="_blank" href="http://www.os-templates.com/" title="Free Website Templates">Coordinación de Análisis y Diseño de Sistemas</a></p>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="layout/scripts/jquery.min.js"></script>
+<script src="layout/scripts/jquery.backtotop.js"></script>
+<script src="layout/scripts/jquery.mobilemenu.js"></script>
+<!-- IE9 Placeholder Support -->
+<script src="layout/scripts/jquery.placeholder.min.js"></script>
+<!-- / IE9 Placeholder Support -->
+</body>
+</html>

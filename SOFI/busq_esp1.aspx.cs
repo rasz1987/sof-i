@@ -23,7 +23,7 @@ namespace SOFI
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            MaintainScrollPositionOnPostBack = true;
+
         }
 
         protected void Button2_Click(object sender, EventArgs e)

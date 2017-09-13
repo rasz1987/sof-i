@@ -1,12 +1,8 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/inicio1.Master" AutoEventWireup="true" CodeBehind="inicio.aspx.cs" Inherits="SOFI.inicio" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="inicio2.aspx.cs" Inherits="SOFI.WebForm1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
     <div class="panel">
-        <div class="panel">
-            <h2>inasistencias </h2>
-        </div>
         <asp:Panel ID="Panel1" runat="server" ScrollBars="Auto" Height="400px">
-            <asp:GridView ID="gv_data" runat="server" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None" Width="1000px" >
+        <asp:GridView ID="gv_data" runat="server" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None" Width="1000px" >
             <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
             <Columns>
                 <asp:BoundField DataField="codemp" HeaderText="Cedula" SortExpression="codemp" >
@@ -40,5 +36,4 @@
     
     
     </div>
-
 </asp:Content>

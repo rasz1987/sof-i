@@ -1,10 +1,12 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/inicio1.Master" AutoEventWireup="true" CodeBehind="busq_esp.aspx.cs" Inherits="SOFI.busq_esp" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="busq_esp1.aspx.cs" Inherits="SOFI.busq_esp" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <div class="panel">            
-        <asp:RadioButton ID="rb1" runat="server"  Text="Cédula" GroupName="busqueda" OnCheckedChanged="rb1_CheckedChanged" Width="100px" AutoPostBack="True" />
-        <asp:RadioButton ID="rb2" runat="server"  Text="Fecha" GroupName="busqueda" OnCheckedChanged="rb2_CheckedChanged" Width="100px" AutoPostBack="True"  />
-        &nbsp;<asp:TextBox ID="tb1" runat="server"></asp:TextBox>
+    <div class="panel">
+            
+        <asp:RadioButton ID="rb1" runat="server" AutoPostBack="True"  Text="Cédula" GroupName="busqueda" OnCheckedChanged="rb1_CheckedChanged" />
+        <asp:RadioButton ID="rb2" runat="server" AutoPostBack="True"  Text="Fecha" GroupName="busqueda" OnCheckedChanged="rb2_CheckedChanged"  />
+        &nbsp;
+        <asp:TextBox ID="tb1" runat="server"></asp:TextBox>
         &nbsp;&nbsp;
         <asp:Button ID="Button2" runat="server" Text="Calcular" OnClick="Button2_Click" Enabled="False"/>
         &nbsp;
@@ -34,8 +36,11 @@
             <SortedDescendingCellStyle BackColor="#FFFDF8" />
             <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
         </asp:GridView>
-      </asp:Panel>
-                <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ATT2007ConnectionString %>" ProviderName="<%$ ConnectionStrings:ATT2007ConnectionString.ProviderName %>" SelectCommand="SELECT codemp, codcon, fecha, monto, acumulado FROM [Reporte de inasistencia]"></asp:SqlDataSource>
+    </asp:Panel>
+                
+        <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ATT2007ConnectionString %>" ProviderName="<%$ ConnectionStrings:ATT2007ConnectionString.ProviderName %>" SelectCommand="SELECT codemp, codcon, fecha, monto, acumulado FROM [Reporte de inasistencia]"></asp:SqlDataSource>
+    
+    
     </div>
 
 </asp:Content>
