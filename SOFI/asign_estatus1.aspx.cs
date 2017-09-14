@@ -25,8 +25,6 @@ namespace SOFI
         string fec = DateTime.Today.ToString("dd/MM/yyyy");
         protected void Page_Load(object sender, EventArgs e)
         {
-
-            MaintainScrollPositionOnPostBack = true;
             RangeValidator1.MaximumValue = DateTime.Today.AddMonths(2).ToShortDateString();
             RangeValidator1.MinimumValue = DateTime.Today.ToShortDateString();
 

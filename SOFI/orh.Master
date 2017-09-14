@@ -1,0 +1,86 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="orh.master.cs" Inherits="SOFI.orh" %>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>UCOCAR | SOF-I</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body id="top">
+    <form id="form1" runat="server">
+<!-- Top Background Image Wrapper -->
+<div class="bgded overlay" style="background-image:url('images/demo/backgrounds/01.jpg');"> 
+          <!-- HEADER -->  
+    <header id="header" class="hoc clear">
+    <div id="logo"> 
+      <h1>sof-i_2.0</h1>
+      <p>SOftware para el control de asistencia</p>
+    </div>
+    <div id="topbar" class="clear"> 
+      <!-- ################################################################################################ -->
+      <nav id="mainav" class="fl_left">
+        <ul class="clear">
+            <li id="page1" runat="server"><a href="inasis_diaria.aspx">Actualizar Inasistencia</a></li>
+            <li id="page2" runat="server"><a href="inasis_quincenal.aspx">Descargar txt</a></li>
+            <li id="page3" runat="server"><a href="asign_estatus.aspx">Asignación de estatus</a></li>
+            <li id="page4" runat="server"><asp:Button ID="Button1" runat="server" Text="Cerrar sesión" OnClick="Button1_Click" BackColor="#00CCFF" /></li>
+
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- ################################################################################################ -->
+  <div id="pageintro" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <article class="introtxt">
+      <p>Nueva versión</p>
+      <h2 class="heading">ACCESO ORH</h2>
+      <p>Sólo personal autorizado</p>
+      <!--footer><a class="btn medium inverse" href="login.aspx">ACCESO ORH</a></footer-->
+    </article>
+    <!-- ################################################################################################ -->
+  </div>
+  <!-- ################################################################################################ -->
+</div>
+<!-- End Top Background Image Wrapper -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper">
+</div>
+<div class="wrapper row3">
+  <main class="hoc container clear"> 
+    <!-- main body -->
+    <!-- ################################################################################################ -->
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder> 
+    <!-- ################################################################################################ -->
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
+</div>
+<div class="wrapper row5">
+  <div id="copyright" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <p class="fl_left">Copyleft &copy; 2017 - <a href="#">Oficina de Tecnologías de Información</a></p>
+    <p class="fl_right"><a href="#" >Coordinación de Análisis y Diseño de Sistemas</a></p>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="layout/scripts/jquery.min.js"></script>
+<script src="layout/scripts/jquery.backtotop.js"></script>
+<script src="layout/scripts/jquery.mobilemenu.js"></script>
+<!-- IE9 Placeholder Support -->
+<script src="layout/scripts/jquery.placeholder.min.js"></script>
+<!-- / IE9 Placeholder Support -->
+    </form>
+</body>
+</html>

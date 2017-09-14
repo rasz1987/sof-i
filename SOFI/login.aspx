@@ -3,10 +3,10 @@
 
     <div class="panel">
         <div class="panel">
-            <h2>acceso </h2>
+            <h2></h2>
         </div>
         <asp:Panel ID="Panel1" runat="server" ScrollBars="Auto" Height="400px">
-            <asp:Login ID="Login1" runat="server"></asp:Login>
+            <asp:Login ID="Login1" runat="server" OnAuthenticate="Login1_Authenticate"></asp:Login>
         </asp:Panel>
     </div>
 
