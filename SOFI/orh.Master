@@ -26,7 +26,8 @@
             <li id="page1" runat="server"><a href="inasis_diaria.aspx">Actualizar Inasistencia</a></li>
             <li id="page2" runat="server"><a href="inasis_quincenal.aspx">Descargar txt</a></li>
             <li id="page3" runat="server"><a href="asign_estatus.aspx">Asignación de estatus</a></li>
-            <li id="page4" runat="server"><asp:Button ID="Button1" runat="server" Text="Cerrar sesión" OnClick="Button1_Click" BackColor="#00CCFF" /></li>
+            <li id="page4" runat="server"><a href="asistencias.aspx">Asistencias</a></li>
+            <li id="page5" runat="server"><asp:Button ID="Button1" runat="server" Text="Cerrar sesión" OnClick="Button1_Click" BackColor="#00CCFF" /></li>
 
         </ul>
       </nav>

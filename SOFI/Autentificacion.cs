@@ -37,6 +37,27 @@ namespace SOFI
                     return true;
 
         }
+
+        public static bool Asistencia(string cedula)
+        {
+            OleDbConnection con;
+            //Cadena de conexión
+            string cs = ConfigurationManager.ConnectionStrings["ATT2007ConnectionString"].ConnectionString;
+            //consulta a la base de datos
+            string sql = " select count(*) from userinfo where ssn=@cedula";
+
+
+            con = new OleDbConnection(cs);
+            con.Open();
+            OleDbCommand query = new OleDbCommand(sql, con);
+            query.Parameters.AddWithValue("@cedula", cedula); //enviamos los parametros
+            int count = Convert.ToInt32(query.ExecuteScalar()); //devuelve la fila afectada
+
+            if (count == 0)
+                return false;
+            else
+                return true;
+        }
     }
 
 }
