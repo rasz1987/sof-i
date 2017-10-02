@@ -2,6 +2,10 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <div class="panel">
+        <div>
+            <h2>asignar estatus </h2>
+        </div>
+        <br />
         <asp:Panel ID="Panel1" runat="server" ScrollBars="Auto" Height="270px">
             <asp:CheckBoxList ID="CheckBoxList1" runat="server" DataSourceID="SqlDataSource2" DataTextField="NAME" DataValueField="SSN"></asp:CheckBoxList>   
             <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ATT2007ConnectionString %>" ProviderName="<%$ ConnectionStrings:ATT2007ConnectionString.ProviderName %>" SelectCommand="SELECT SSN, NAME FROM USERINFO WHERE (SSN &lt;&gt; '') AND (NOT EXISTS (SELECT ci FROM ESTATUS WHERE (USERINFO.SSN = ci) AND (fec_hasta &gt;= date()))) ORDER BY NAME"></asp:SqlDataSource>

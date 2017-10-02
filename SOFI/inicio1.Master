@@ -12,7 +12,7 @@
 <body id="top">
     <form id="form1" runat="server">
 <!-- Top Background Image Wrapper -->
-<div class="bgded overlay" style="background-image:url('images/demo/backgrounds/01.jpg');"> 
+<div class="bgded overlay" style="background-image:url('images/01.jpg');"> 
           <!-- HEADER -->  
     <header id="header" class="hoc clear">
     <div id="logo"> 

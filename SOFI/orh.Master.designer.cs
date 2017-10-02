@@ -67,6 +67,15 @@ namespace SOFI {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl page5;
         
         /// <summary>
+        /// Control page6.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl page6;
+        
+        /// <summary>
         /// Control Button1.
         /// </summary>
         /// <remarks>

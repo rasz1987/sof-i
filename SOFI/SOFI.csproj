@@ -64,6 +64,7 @@
     <Content Include="asign_estatus.aspx" />
     <Content Include="asistencias.aspx" />
     <Content Include="busq_esp.aspx" />
+    <Content Include="editar_usuario.aspx" />
     <Content Include="estilos.css" />
     <Content Include="images\01.jpg" />
     <Content Include="images\logo1.png" />
@@ -114,6 +115,13 @@
     </Compile>
     <Compile Include="busq_esp.aspx.designer.cs">
       <DependentUpon>busq_esp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="editar_usuario.aspx.cs">
+      <DependentUpon>editar_usuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="editar_usuario.aspx.designer.cs">
+      <DependentUpon>editar_usuario.aspx</DependentUpon>
     </Compile>
     <Compile Include="inasis_diaria.aspx.cs">
       <DependentUpon>inasis_diaria.aspx</DependentUpon>
